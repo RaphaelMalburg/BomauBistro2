@@ -10,7 +10,12 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
-
+.letter-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.356); /* Adjust values as needed */
+}
+.logo-shadow {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.922); /* Adjust values as needed */
+}
 /* START: General styles */
 .max-width {
   @apply max-w-[1440px] mx-auto;
@@ -39,7 +44,7 @@
 
 /* START: Hero styles */
 .hero {
-  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+  @apply flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px]  justify-center items-center mx-auto;
 }
 
 .hero__title {
@@ -51,15 +56,15 @@
 }
 
 .hero__image-container {
-  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+  @apply xl:flex-1 flex justify-end items-end md:w-4/5 w-full lg:w-[480px] xl:h-screen md:mt-60;
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+  @apply relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[350px]  justify-center mt-48 md:-mt-10 my-auto h-[280px] z-0;
 }
 
 .hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  @apply absolute xl:-top-24 xl:-right-1/2 right-0 bg-hero-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
 /* END: Hero styles */
 

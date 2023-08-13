@@ -10,8 +10,14 @@ module.exports = {
       colors: {
         "black-100": "#2B2C35",
         "primary-blue": {
-          DEFAULT: "#2B59FF",
+          DEFAULT: "#99A9C2",
           100: "#F5F8FF",
+          200: "#CCD4E5",
+          225: "#B3BFCF",
+          250: "#99A9C2",
+          275: "#7F8FA3",
+          300: "#324163",
+          400: "#1B2633",
         },
         "secondary-orange": "#f79761",
         "light-white": {
@@ -23,6 +29,16 @@ module.exports = {
       backgroundImage: {
         pattern: "url('/pattern.png')",
         "hero-bg": "url('/hero-bg.png')",
+      },
+      screens: {
+        xs: "320px",
+        xs1: "420px",
+        xs2: "560px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xl2: "1536px",
       },
     },
   },
