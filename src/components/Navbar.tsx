@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+import { motion } from "framer-motion";
 import ButtonAtitude from "./ButtonAtitude";
 import { FiMenu } from "react-icons/fi";
 
@@ -12,6 +13,25 @@ const NavBar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   return (
     <header className="w-full  absolute z-10">
@@ -20,25 +40,28 @@ const NavBar = () => {
           <Image src="/logo.svg" alt="logo" width={210} height={18} className="object-contain logo-shadow" />
         </Link>
 
-        <ul
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          animate="visible"
           className={`md:items-center w-full absolute top-0 md:static ${
             menuOpen ? "block" : "hidden"
           }  space-y-2 md:space-y-0 md:flex md:space-x-2  md:bg-transparent font-bold bg-primary-blue-200/90 text-md text-center  lg:text-lg right-0 text-primary-blue-400 md:w-auto grid lg:gap-8  gap-8 place-content-center tracking-wider md:h-fit h-screen col-start-3  col-span-3 z-40 letter-shadow [&_li]:bg-primary-blue-250/30 [&_li]:rounded-full `}
           onClick={toggleMenu}>
           {/* Navigation items */}
-          <li>
+          <motion.li variants={item}>
             <Link href="/">HOME</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
             <Link href="/about">ABOUT</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
             <Link href="/menu">MENU</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
             <Link href="/gallery">GALLERY</Link>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden col-start-6 col-span-1 order-1 md:order-none">
@@ -47,14 +70,28 @@ const NavBar = () => {
           </button>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14 md:pe-0 md:scale-100  col-span-2 place-content-center  scale-75  ">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 40,
+          }}
+          whileHover={{ scale: 1.05, rotate: 370 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: 380,
+            borderRadius: "100%",
+          }}
+          className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14 md:pe-0 md:scale-100  col-span-2 place-content-center  scale-75  ">
           <ButtonAtitude />
           <div className="relative w-[90px] h-[90px] ">
             <Link href="/atitudeRecord">
               <Image src={"/atitude.png"} fill alt="atitude logo" />
             </Link>
           </div>
-        </div>
+        </motion.div>
       </nav>
     </header>
   );
