@@ -11,10 +11,10 @@ interface ParallaxProps {
 
 const About = () => {
   return (
-    <section className="mt-20 md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400  ">
+    <section className=" max-w-[1440px] justify-center items-center mx-auto  mt-20 md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400  ">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-5 place-content-center">
         <div className="text-[28px] md:text-5xl  md:col-span-3">
-          <h1 className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold pb-4 ">
+          <h1 className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold pb-4  ">
             Traditional Asian Ingredients
           </h1>
           <h2 className="flex justify-between">
@@ -25,8 +25,7 @@ const About = () => {
           </h2>
         </div>
         <p className="text-primary-blue-300 md:text-xl pt-4 letter-shadow pb-4 md:col-span-2 ">
-          Our menu is inspired by the traditional Asian ingredients and cooking techniques.Our menu is inspired by the traditional Asian ingredients and cooking techniques.Our menu
-          is inspired by the traditional Asian ingredients and cooking techniques.
+          Our menu is inspired by the traditional Asian ingredients and cooking techniques.Our menu is inspired by the traditional Asian ingredients and cooking techniques.
         </p>
       </div>
 
@@ -40,12 +39,11 @@ const About = () => {
           </h1>
           <p className=" letter-shadow pb-4 text-lg">
             Bomau is a restaurant that serves Asian cuisine. We are committed to providing our guests with the best quality food and service. Bomau is a restaurant that serves
-            Asian cuisine. We are committed to providing our guests with the best quality food and service.
           </p>
           <button
             type="button"
-            className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
-            BOOK A TABLE
+            className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-20 py-5 tracking-wider font-bold text-primary-blue-100 w-fit">
+            MENU
           </button>
         </div>{" "}
         <div className="absolute xl:-top-14 xl:-right-1/2 right-0 bg-about-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
