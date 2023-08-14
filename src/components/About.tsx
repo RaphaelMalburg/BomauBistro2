@@ -11,7 +11,7 @@ interface ParallaxProps {
 
 const About = () => {
   return (
-    <section className=" max-w-[1440px] justify-center items-center mx-auto  mt-20 md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400  ">
+    <section className=" max-w-[1440px] justify-center items-center mx-auto  mt-40 md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400  ">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-5 place-content-center">
         <div className="text-[28px] md:text-5xl  md:col-span-3">
           <h1 className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold pb-4  ">
@@ -38,7 +38,8 @@ const About = () => {
             ABOUT <span className="text-[28px] md:text-5xl">BOMAU</span>
           </h1>
           <p className=" letter-shadow pb-4 text-lg">
-            Bomau is a restaurant that serves Asian cuisine. We are committed to providing our guests with the best quality food and service. Bomau is a restaurant that serves
+            We are a trendy eatery offers an extensive menu featuring elevated street food and familiar classics inspired by the Far East including Thailand, China, and Singapore,
+            among others. With an extensive wine menu, craft beers, sake, and signature cocktails, there's something for everyone here.
           </p>
           <button
             type="button"
