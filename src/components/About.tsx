@@ -39,7 +39,7 @@ const About = () => {
           </h1>
           <p className=" letter-shadow pb-4 text-lg">
             We are a trendy eatery offers an extensive menu featuring elevated street food and familiar classics inspired by the Far East including Thailand, China, and Singapore,
-            among others. With an extensive wine menu, craft beers, sake, and signature cocktails, there's something for everyone here.
+            among others. With an extensive wine menu, craft beers, sake, and signature cocktails, there&apos;s something for everyone here.
           </p>
           <button
             type="button"
