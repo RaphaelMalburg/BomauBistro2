@@ -7,7 +7,7 @@ const ButtonAtitude = () => {
     <button
       type="button"
       className=" rounded-full
-      border-bblue-700  letter-shadow px-4 py-2 border-2 h-10 font-bold text-bblue-700 text-[10px] w-36 flex justify-center items-center">
+      border-bblue-700  letter-shadow px-4 py-2 border-2 h-10 font-bold text-bblue-700 text-[10px] w-36 md:flex justify-center items-center hidden ">
       <Link href={"/atituderecord "}>CHECK OUT OUR RECORD STORE</Link>
     </button>
   );

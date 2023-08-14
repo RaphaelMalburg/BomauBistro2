@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-import CustomButton from "./CustomButton";
 import ButtonAtitude from "./ButtonAtitude";
 import { FiMenu } from "react-icons/fi";
 
@@ -17,7 +16,7 @@ const NavBar = () => {
   return (
     <header className="w-full  absolute z-10">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent text-primary-blue-400">
-        <Link href="/" className="flex justify-center items-center min-w-[100px] md:min-w-[160px]">
+        <Link href="/" className="flex justify-center  scale-105 xs1:scale-100 items-center min-w-[100px] md:min-w-[160px]">
           <Image src="/logo.svg" alt="logo" width={210} height={18} className="object-contain logo-shadow" />
         </Link>
 
@@ -42,15 +41,15 @@ const NavBar = () => {
         </ul>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden col-start-6 col-span-1">
+        <div className="md:hidden col-start-6 col-span-1 order-1 md:order-none">
           <button onClick={toggleMenu}>
             <FiMenu className="w-10 h-10 text-gray-700" />
           </button>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14 scale-90 md:scale-100 md:ps-8 col-span-2 place-content-center ">
+        <div className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14  md:scale-100 md:ps-8 col-span-2 place-content-center  scale-75  ">
           <ButtonAtitude />
-          <div className="relative w-[70px] h-[70px] ">
+          <div className="relative w-[90px] h-[90px] ">
             <Link href="/atitudeRecord">
               <Image src={"/atitude.png"} fill alt="atitude logo" />
             </Link>
