@@ -30,16 +30,17 @@ const About = () => {
         </p>
       </div>
 
-      <div>
-        <div className="relative  xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-56 w-[280px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
+        <div className="relative  xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[280px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
           <Image src="/fish.png" fill alt="fish photo" className="object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px]" />
         </div>
-        <div className="flex flex-col gap-4 pt-4">
-          <h1 className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[28px] md:text-5xl ">
-            ABOUT <span>BOMAU</span>
+        <div className="flex flex-col pl-4  gap-10 justify-center pt-4">
+          <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">
+            ABOUT <span className="text-[28px] md:text-5xl">BOMAU</span>
           </h1>
           <p className=" letter-shadow pb-4 text-lg">
-            Bomau is a restaurant that serves Asian cuisine. We are committed to providing our guests with the best quality food and service.
+            Bomau is a restaurant that serves Asian cuisine. We are committed to providing our guests with the best quality food and service. Bomau is a restaurant that serves
+            Asian cuisine. We are committed to providing our guests with the best quality food and service.
           </p>
           <button
             type="button"
