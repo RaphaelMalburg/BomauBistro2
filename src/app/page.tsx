@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { Footer, Hero } from "@/components";
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
 import Vibe from "@/components/Vibe";
@@ -10,6 +10,7 @@ export default function Home() {
       <About />
       <Vibe />
       <Carousel />
+      <Footer />
     </main>
   );
 }
