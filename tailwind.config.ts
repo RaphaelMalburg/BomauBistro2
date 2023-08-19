@@ -11,6 +11,8 @@ module.exports = {
         "black-100": "#2B2C35",
         "primary-blue": {
           DEFAULT: "#CCD4E5",
+
+          50: "#F5F8FF",
           100: "#F5F8FF",
           200: "#CCD4E5",
           225: "#B3BFCF",
