@@ -36,7 +36,7 @@ export default function Carousel() {
         {images.map((image: { src: string | StaticImport; alt: string }, index: any) => (
           // eslint-disable-next-line react/jsx-no-undef
           <SplideSlide key={index} className="flex">
-            <div className="relative w-[280px] h-[300px] mx-1 shadow-xl">
+            <div className="relative w-[280px] h-[300px] mx-1 shadow-xl justify-center items-center">
               <Image src={image.src} fill alt={image.alt} className="object-cover " />
             </div>
           </SplideSlide>

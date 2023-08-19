@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-100 h-fit mb-28">
+    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-100 h-fit mb-28 mt-5">
       <div className="flex-[1.5] padding-x grid gap-4">
         <motion.div
           variants={container}
