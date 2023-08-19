@@ -44,7 +44,8 @@ const Footer = () => (
         <Link href={"/atitude-records"} className="mx-auto my-auto">
           <Image src="/atitude.png" alt="atitude" width={60} height={18} className="object-contain" />
         </Link>
-      </div>
+      </div>{" "}
+      <div className="absolute  bottom-44 scale-150  -right-10 bg-about-bg   object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12453.600849606648!2d-9.1515071!3d38.7086196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935e1515c4bff%3A0x8435742c73629a4d!2sBomau%20Bistr%C3%B4!5e0!3m2!1sen!2spt!4v1692462616035!5m2!1sen!2spt"
@@ -57,7 +58,6 @@ const Footer = () => (
     <div className="flex justify-between items-center flex-wrap mt-10 border-t border-primary-blue-400 sm:px-16 px-6 py-10">
       <p>@2023 Bomau. All rights reserved</p>
     </div>{" "}
-    <div className="absolute  bottom-44 scale-150  -right-10 bg-about-bg   object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
   </footer>
 );
 
