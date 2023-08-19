@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="relative bg-gradient-to-r from-primary-blue-50 via-primary-blue-100 to-primary-blue-100/70">
+    <main className="relative bg-gradient-to-l from-primary-blue-100 via-primary-blue-200/30 to-primary-blue-200/70">
       <NavBar />
       {children}
       <Footer />
