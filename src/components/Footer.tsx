@@ -54,10 +54,10 @@ const Footer = () => (
           className="w-full h-fit"></iframe>
       </div>
     </div>
-
     <div className="flex justify-between items-center flex-wrap mt-10 border-t border-primary-blue-400 sm:px-16 px-6 py-10">
       <p>@2023 Bomau. All rights reserved</p>
-    </div>
+    </div>{" "}
+    <div className="absolute  bottom-44 scale-150  -right-10 bg-about-bg   object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
   </footer>
 );
 
