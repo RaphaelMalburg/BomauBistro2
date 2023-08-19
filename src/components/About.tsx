@@ -47,7 +47,7 @@ const About = () => {
             MENU
           </button>
         </div>{" "}
-        <div className="absolute xl:-top-14 xl:-right-1/2 right-0 bg-about-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
+        <div className="absolute xl:-top-14 md:right-1/3 scale-125 right-0 bg-about-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       </div>
     </section>
   );

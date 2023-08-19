@@ -32,7 +32,7 @@ const Vibe = () => {
             Best cocktails in town. Our organic wine selection is carefully chosen to pair with our dishes. We have a wide selection of wines from all over the world.
           </p>
         </div>
-        <div className="absolute xl:-top-60 xl:right-1/2 right-0 bg-about-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
+        <div className="absolute xl:-top-60 md:-right-1/2 right-0 bg-about-bg top-0 scale-125 object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       </div>
     </section>
   );
