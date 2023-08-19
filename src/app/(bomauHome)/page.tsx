@@ -10,7 +10,6 @@ export default function Home() {
       <About />
       <Vibe />
       <Carousel />
-      <Footer />
     </main>
   );
 }

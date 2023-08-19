@@ -41,7 +41,7 @@ const Footer = () => (
         <Link href={"/"}>
           <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain" />
         </Link>
-        <Link href={"/"} className="mx-auto my-auto">
+        <Link href={"/atitude-records"} className="mx-auto my-auto">
           <Image src="/atitude.png" alt="atitude" width={60} height={18} className="object-contain" />
         </Link>
       </div>

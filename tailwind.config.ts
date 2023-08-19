@@ -22,8 +22,9 @@ module.exports = {
           325: "#2B2C35",
           350: "#1F1F2A",
           400: "#1B2633",
+          atitude: "#0F4081",
         },
-        "secondary-orange": "#f79761",
+        "secondary-beige": "#EDE6D3",
         "light-white": {
           DEFAULT: "rgba(59,60,152,0.03)",
           100: "rgba(59,60,152,0.02)",

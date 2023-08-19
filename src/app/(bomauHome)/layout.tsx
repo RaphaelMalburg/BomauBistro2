@@ -1,5 +1,3 @@
-import "./globals.css";
-
 import { Footer, NavBar } from "@/components";
 
 export const metadata = {
@@ -9,8 +7,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="relative bg-gradient-to-r from-primary-blue-275 via-primary-blue-225 to-primary-blue-200">{children}</body>
-    </html>
+    <main className="relative bg-gradient-to-r from-primary-blue-275 via-primary-blue-225 to-primary-blue-200">
+      <NavBar />
+      {children}
+      <Footer />
+    </main>
   );
 }

@@ -15,7 +15,7 @@ const Vibe = () => {
             </span>
           </h2>
         </div>
-        <p className="text-primary-blue-300 md:text-xl my-auto pt-4 letter-shadow pb-4 md:col-span-2 ">
+        <p className="text-primary-blue-300 md:text-xl my-auto pt-4 letter-shadow pb-4 md:col-span-2  text-sm">
           We have DJ on the floor every Friday and Saturday night. Tops sets from 8pm to 11pm.
         </p>
       </div>
@@ -28,7 +28,7 @@ const Vibe = () => {
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">
             COCKTAILS &<span className="text-[28px] md:text-5xl">ORGANIC WINE</span>
           </h1>
-          <p className=" letter-shadow pb-4 mr-10 text-lg">
+          <p className=" letter-shadow pb-4 mr-10 text-sm md:text-lg">
             Best cocktails in town. Our organic wine selection is carefully chosen to pair with our dishes. We have a wide selection of wines from all over the world.
           </p>
         </div>

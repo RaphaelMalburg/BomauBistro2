@@ -3,6 +3,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
+import Link from "next/link";
 
 interface ParallaxProps {
   children: string;
@@ -24,7 +25,7 @@ const About = () => {
             </span>
           </h2>
         </div>
-        <p className="text-primary-blue-300 md:text-xl pt-4 letter-shadow pb-4 md:col-span-2 ">
+        <p className="text-primary-blue-300 md:text-xl pt-4 letter-shadow pb-4 text-sm md:col-span-2 ">
           Our menu is inspired by the traditional Asian ingredients and cooking techniques.Our menu is inspired by the traditional Asian ingredients and cooking techniques.
         </p>
       </div>
@@ -37,15 +38,15 @@ const About = () => {
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">
             ABOUT <span className="text-[28px] md:text-5xl">BOMAU</span>
           </h1>
-          <p className=" letter-shadow pb-4 text-lg">
+          <p className=" letter-shadow pb-4 text-sm md:text-lg">
             We are a trendy eatery offers an extensive menu featuring elevated street food and familiar classics inspired by the Far East including Thailand, China, and Singapore,
             among others. With an extensive wine menu, craft beers, sake, and signature cocktails, there&apos;s something for everyone here.
           </p>
-          <button
-            type="button"
+          <Link
+            href="/menu"
             className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-20 py-5 tracking-wider font-bold text-primary-blue-100 w-fit">
             MENU
-          </button>
+          </Link>
         </div>{" "}
         <div className="absolute xl:-top-14 md:right-1/3 scale-125 right-0 bg-about-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       </div>

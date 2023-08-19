@@ -36,15 +36,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-100 h-fit mb-28 mt-5">
+    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-100 h-fit mb-28 m">
       <div className="flex-[1.5] padding-x grid gap-4">
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[32px] md:text-5xl  font-bold tracking-wide lg:tracking-wider letter-shadow  h-2/3   lg:mt-52">
+          className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[30px] md:text-5xl  font-bold tracking-wide lg:tracking-wider letter-shadow  h-2/3   lg:mt-52">
           <motion.h1 variants={item}>
-            <span className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text rounded-md  py-2 hover:bg-blue-600 hover:text-white transition  leading-[65px] pr-2">
+            <span className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text rounded-md   hover:bg-blue-600 hover:text-white transition   pr-2">
               Dive
             </span>
             Into The Flavours
@@ -57,7 +57,7 @@ const Hero = () => {
           </motion.h1>
         </motion.div>
 
-        <motion.p variants={item} className="text-primary-blue-300 letter-shadow pb-4 md:text-xl ">
+        <motion.p variants={item} className="text-primary-blue-300 letter-shadow pb-4 md:text-xl text-sm ">
           Our menu is inspired by the traditional Asian ingredients and cooking techniques. We are committed to providing our guests with the best quality food and service.
         </motion.p>
         <motion.div className="flex items-center " variants={item}>
