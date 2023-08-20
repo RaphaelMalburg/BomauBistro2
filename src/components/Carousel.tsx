@@ -2,13 +2,13 @@
 import React from "react";
 import { SplideSlide, Splide } from "@splidejs/react-splide";
 import Image from "next/image";
-import images from "@/utils/images";
+import { images } from "@/utils/images";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import "@splidejs/react-splide/css";
 
 export default function Carousel() {
   return (
-    <div id="gallery" className="max-w-[1440px] justify-center items-center mx-auto  flex-col mt-10 md:pt-4 padding-x flex relative text-primary-blue-400 z-20">
+    <div id="gallery" className="w-full justify-center items-center mx-auto  flex-col mt-10 md:pt-4 padding-x flex relative text-primary-blue-400 z-20">
       <h1 className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 text-[24px] to-primary-blue-400 text-transparent bg-clip-text font-bold ">GALLERY</h1>
       <Splide
         aria-label="Bomau Bistro"

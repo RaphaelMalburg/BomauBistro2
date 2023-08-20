@@ -37,4 +37,39 @@ const images = [
   },
 ];
 
-export default images;
+const imagesAtitude = [
+  {
+    src: "/atitude1.png",
+    alt: "Atitude 1",
+  },
+  {
+    src: "/atitude2.png",
+    alt: "Atitude 2",
+  },
+  {
+    src: "/atitude3.png",
+    alt: "Atitude 3",
+  },
+  {
+    src: "/atitude4.png",
+    alt: "Atitude 4",
+  },
+  {
+    src: "/atitude5.png",
+    alt: "Atitude 5",
+  },
+  {
+    src: "/atitude6.png",
+    alt: "Atitude 6",
+  },
+  {
+    src: "/atitude7.png",
+    alt: "Atitude 7",
+  },
+  {
+    src: "/atitude8.png",
+    alt: "Atitude 8",
+  },
+];
+
+export { images, imagesAtitude };
