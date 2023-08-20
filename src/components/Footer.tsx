@@ -11,7 +11,7 @@ const Footer = () => (
           <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain" />
         </Link>
       </div>
-      <div className="grid w-fit bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold border-r-2 border-primary-blue-300 pr-6 ">
+      <div className="grid w-fit bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold md:border-r-2 border-primary-blue-300 pr-6 ">
         <div className=" gap-4  grid bg-gradient-to-r from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text">
           <Link href={"/#about"}>ABOUT</Link>
           <Link href={"/#gallery"}>GALLERY</Link>
@@ -24,15 +24,14 @@ const Footer = () => (
           <p className="text-base bg-gradient-to-b from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text">13:00 - 22:00 </p>
         </div>
       </div>
-      {/*      <div className=" bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400  w-full md:w-[3px] h-[3px] md:h-full rounded-full" />*/}
-      <div className=" gap-4  bg-gradient-to-r from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold hidden md:grid border-r-2 pr-6 border-primary-blue-300">
+      <div className=" gap-4  bg-gradient-to-r from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold hidden md:grid md:border-r-2 pr-6 border-primary-blue-300">
         <h3>WORKING HOURS</h3>
         <p className="text-base bg-gradient-to-r from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text">Monday - Friday</p>
         <p className="text-base bg-gradient-to-b from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text">13:00 - 22:00 </p>
       </div>
-      <div className="grid gap-4 bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold border-r-2 border-primary-blue-300 pr-3">
-        <h3>CONTACT</h3>
-        <p className="text-base whitespace-nowrap">+351 21 808 8841</p>
+      <div className="grid gap-4 bg-gradient-to-r grid-cols-1 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold md:border-r-2 border-primary-blue-300 pr-3">
+        <h3 className="hidden md:block">CONTACT</h3>
+        <p className="text-base whitespace-nowrap  ">+351 21 808 8841</p>
         <p className="text-base">bistrobomau@gmail.com</p>
       </div>{" "}
       <div className="grid gap-4 bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold place-content-center">
@@ -61,21 +60,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
-{
-  /**
-      <div className="footer__links">
-        {footerLinks.map((item) => (
-          <div key={item.title} className="footer__link">
-            <h3 className="font-bold">{item.title}</h3>
-            <div className="flex flex-col gap-5">
-              {item.links.map((link) => (
-                <Link key={link.title} href={link.url} className="text-gray-500">
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>*/
-}

@@ -60,10 +60,10 @@ const Hero = () => {
         <motion.p variants={item} className="text-primary-blue-300 letter-shadow pb-4 md:text-xl text-sm ">
           Our menu is inspired by the traditional Asian ingredients and cooking techniques. We are committed to providing our guests with the best quality food and service.
         </motion.p>
-        <motion.div className="flex items-center " variants={item}>
+        <motion.div className="flex items-center cursor-pointer" variants={item}>
           <button
             type="button"
-            className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
+            className="bg-gradient-to-r  from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
             BOOK A TABLE
           </button>
           <BsArrowRight className="w-14 h-10 ms-8 text-gray-700" />

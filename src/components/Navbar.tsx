@@ -53,13 +53,13 @@ const NavBar = () => {
             <Link href="/">HOME</Link>
           </motion.li>
           <motion.li variants={item}>
-            <Link href="/about">ABOUT</Link>
+            <Link href="/#about">ABOUT</Link>
           </motion.li>
           <motion.li variants={item}>
             <Link href="/menu">MENU</Link>
           </motion.li>
           <motion.li variants={item}>
-            <Link href="/gallery">GALLERY</Link>
+            <Link href="/#gallery">GALLERY</Link>
           </motion.li>
         </motion.ul>
 
