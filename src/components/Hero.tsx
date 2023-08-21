@@ -74,7 +74,7 @@ const Hero = () => {
       <div className="xl:flex-1 flex justify-end items-end md:w-4/5 w-full lg:w-[480px] xl:h-fit md:mt-60 ">
         <div className="relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-60 w-[350px]  justify-center mt-56 md:-mt-10 my-auto h-[320px] z-0 ">
           <Image
-            src="/salad.png"
+            src="/fish.jpeg"
             alt="hero"
             fill
             className="object-cover rounded-ss-[80px] rounded-se-[80px] rounded-ee-[80px] rounded-es-[300px] border-slate-400/60 border-[12px]"

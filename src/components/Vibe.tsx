@@ -21,9 +21,9 @@ const Vibe = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
-        <div className="relative order-2 xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[280px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
+        <div className="relative order-2 xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[320px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
           <Image
-            src="/maitai2.jpeg"
+            src="/bomau4.jpeg"
             fill
             alt="fish photo"
             className=" border-slate-400/60 border-[12px] object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px] "
