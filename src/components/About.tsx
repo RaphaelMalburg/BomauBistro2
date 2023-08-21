@@ -32,7 +32,12 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
         <div className="relative  xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[280px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
-          <Image src="/fish.png" fill alt="fish photo" className="object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px]" />
+          <Image
+            src="/fish.png"
+            fill
+            alt="fish photo"
+            className="object-cover  border-slate-400/60 border-[12px] rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px]"
+          />
         </div>
         <div className="flex flex-col pl-4  gap-10 justify-center pt-4">
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">

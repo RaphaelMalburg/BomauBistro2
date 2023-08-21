@@ -61,11 +61,12 @@ const Hero = () => {
           Our menu is inspired by the traditional Asian ingredients and cooking techniques. We are committed to providing our guests with the best quality food and service.
         </motion.p>
         <motion.div className="flex items-center cursor-pointer" variants={item}>
-          <button
+          <Link
+            href="/reservation"
             type="button"
             className="bg-gradient-to-r  from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
             BOOK A TABLE
-          </button>
+          </Link>
           <BsArrowRight className="w-14 h-10 ms-8 text-gray-700" />
         </motion.div>
         <div className=" absolute bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full mx-4 md:mx:10 left-0 -bottom-12 py-2 md:w-full w-11/12   " />
@@ -80,7 +81,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="absolute xl:-top-14 md:-right-1/2 right-0 bg-hero-bg top-0  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
+        <div className="absolute xl:-top-14 md:-right-1/3 right-0 bg-hero-bg top-0  rotate-180  object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       </div>
     </section>
   );

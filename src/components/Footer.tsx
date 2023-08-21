@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { AiFillInstagram } from "react-icons/ai";
 import { footerLinks } from "@/constants";
 
 const Footer = () => (
@@ -36,8 +36,8 @@ const Footer = () => (
       </div>{" "}
       <div className="grid gap-4 bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold place-content-center">
         {" "}
-        <Link href={"/"}>
-          <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain" />
+        <Link href={"https://www.instagram.com/bomau_bistro/"} className="mx-auto my-auto">
+          <AiFillInstagram size={50} color={"#324163"} />
         </Link>
         <Link href={"/atitude-records"} className="mx-auto my-auto">
           <Image src="/atitude.png" alt="atitude" width={60} height={18} className="object-contain" />

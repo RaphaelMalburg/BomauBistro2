@@ -7,8 +7,8 @@ const Vibe = () => {
     <section className=" max-w-[1440px] justify-center items-center mx-auto  mt-20 md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400  ">
       <div className="grid grid-cols-1 gap-2 order-last md:grid-cols-5 place-content-center">
         <div className="text-[28px] md:text-5xl  md:col-span-3">
-          <h1 className="bg-gradient-to-l from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold   ">Great Music</h1>
-          <h2 className="flex justify-between">
+          <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold   ">Great Music</h1>
+          <h2 className="flex justify-between bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text ">
             Great Vibes
             <span className="hidden md:flex ">
               <BsArrowRight className="w-20 h-10  text-gray-700 my-auto " />
@@ -22,7 +22,12 @@ const Vibe = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
         <div className="relative order-2 xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[280px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
-          <Image src="/maitai2.jpeg" fill alt="fish photo" className="object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px] " />
+          <Image
+            src="/maitai2.jpeg"
+            fill
+            alt="fish photo"
+            className=" border-slate-400/60 border-[12px] object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px] "
+          />
         </div>
         <div className="flex flex-col pl-4  gap-10 justify-center pt-4">
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">
