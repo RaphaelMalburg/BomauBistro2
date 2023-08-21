@@ -11,8 +11,8 @@ const Menu = () => {
         <BsArrowLeftShort size={40} />
       </Link>
       <div className="flex flex-col md:flex-row">
-        <Image src={"/menu1.png"} width={500} height={1000} alt="menu" className=" object-contain" />
-        <Image src={"/menu2.png"} width={500} height={1000} alt="menu" className=" object-contain" />
+        <Image src={"/menu1.png"} width={600} height={1000} alt="menu" className=" object-center  " />
+        <Image src={"/menu2.png"} width={600} height={1000} alt="menu" className=" object-center" />
       </div>
     </main>
   );

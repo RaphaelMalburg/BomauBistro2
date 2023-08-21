@@ -27,9 +27,10 @@ export default function Carousel() {
         options={{
           type: "loop",
           autoplay: true,
-          interval: 3000,
+          interval: 3500,
           pauseOnHover: false,
           drag: "free",
+
           perPage: 3,
           breakpoints: {
             2560: {
