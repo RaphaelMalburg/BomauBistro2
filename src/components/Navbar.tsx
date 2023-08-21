@@ -36,8 +36,8 @@ const NavBar = () => {
   return (
     <header className="w-full  absolute z-10">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-2 py-4 bg-transparent text-primary-blue-400">
-        <Link href="/" className="flex justify-center  scale-95 xs1:scale-100 items-center min-w-[100px] md:min-w-[160px]">
-          <Image src="/logo.svg" alt="logo" width={210} height={18} className="object-contain logo-shadow" />
+        <Link href="/" className="flex justify-center  scale-90 xs1:scale-100 items-center min-w-[100px] md:min-w-[160px]">
+          <Image src="/logobomau.png" alt="logo" width={170} height={18} className="object-contain logo-shadow" />
         </Link>
 
         <motion.ul

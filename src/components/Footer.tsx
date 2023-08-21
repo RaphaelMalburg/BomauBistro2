@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="grid grid-cols-1 md:grid-cols-[repeat(6,auto)] place-content-center justify-between gap-5 sm:px-16 px-6 py-10">
       <div className="flex flex-col justify-start items-center md:items-start gap-6">
         <Link href={"/"}>
-          <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain" />
+          <Image src="/logobomau.png" alt="logo" width={118} height={18} className="object-contain" />
         </Link>
       </div>
       <div className="grid w-fit bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 text-transparent bg-clip-text font-extrabold md:border-r-2 border-primary-blue-300 pr-6 ">
