@@ -1,6 +1,4 @@
 const images = [
-  /*please fix my imported images in the array*/
-
   {
     src: "/fish.jpeg",
     alt: "Fish dish",
