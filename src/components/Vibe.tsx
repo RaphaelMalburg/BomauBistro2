@@ -22,12 +22,7 @@ const Vibe = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
         <div className="relative order-2 xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] w-[320px] -ms-2 justify-center  my-auto h-[320px] z-0  ">
-          <Image
-            src="/bomau4.jpeg"
-            fill
-            alt="fish photo"
-            className=" border-slate-400/60 border-[12px] object-cover rounded-ss-[80px] rounded-se-[150px] rounded-ee-[80px] rounded-es-[150px] "
-          />
+          <Image src="/bomau4.jpeg" fill alt="fish photo" className=" border-slate-400/60 border-[1px] rounded-sm object-cover" />
         </div>
         <div className="flex flex-col pl-4  gap-10 justify-center pt-4">
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col ">
@@ -37,7 +32,6 @@ const Vibe = () => {
             Best cocktails in town. Our organic wine selection is carefully chosen to pair with our dishes. We have a wide selection of wines from all over the world.
           </p>
         </div>
-        <div className="absolute xl:-top-60 md:-right-1/2 right-0 bg-about-bg top-0 scale-125 object-fill bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] overflow-hidden " />
       </div>
     </section>
   );

@@ -84,14 +84,7 @@ const NavBar = () => {
             rotate: 380,
             borderRadius: "100%",
           }}
-          className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14 md:pe-0 md:scale-105  col-span-2 place-content-center  scale-75 ">
-          <ButtonAtitude />
-          <div className="relative w-[70px] h-[70px]  md:mr-0 mr-6">
-            <Link href="/atitude-records">
-              <Image src={"/atitude.png"} fill alt="atitude logo" />
-            </Link>
-          </div>
-        </motion.div>
+          className="flex flex-col-reverse lg:flex-row items-center md:col-start-6 col-start-1  xs2:pe-14 md:pe-0 md:scale-105  col-span-2 place-content-center  scale-75 "></motion.div>
       </nav>
     </header>
   );

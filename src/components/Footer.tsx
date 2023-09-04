@@ -39,11 +39,7 @@ const Footer = () => (
         <Link href={"https://www.instagram.com/bomau_bistro/"} className="mx-auto my-auto">
           <AiFillInstagram size={50} color={"#324163"} />
         </Link>
-        <Link href={"/atitude-records"} className="mx-auto my-auto">
-          <Image src="/atitude.png" alt="atitude" width={60} height={18} className="object-contain" />
-        </Link>
       </div>{" "}
-      <div className="absolute  bottom-44 scale-150  -right-10 bg-about-bg object-cover  bg-no-repeat bg-cover  -z-10 w-full xl:h-screen h-[590px] " />
       <div className=" ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12453.600849606648!2d-9.1515071!3d38.7086196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935e1515c4bff%3A0x8435742c73629a4d!2sBomau%20Bistr%C3%B4!5e0!3m2!1sen!2spt!4v1692462616035!5m2!1sen!2spt"
