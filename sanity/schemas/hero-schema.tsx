@@ -16,8 +16,7 @@ const bomauHero = {
     {
       name: "heroSectionDescription",
       title: "Hero Section Description",
-      type: "array",
-      of: [{ type: "block" }],
+      type: "string",
     },
     {
       name: "heroSectionImage",

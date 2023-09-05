@@ -1,13 +1,26 @@
 "use client";
-
+import { getData } from "../../sanity/sanity-utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { BsArrowRight } from "react-icons/bs";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchSanity = async () => {
+      const sanityData: any = await getData();
+      setData(sanityData[0]);
+    };
+
+    fetchSanity();
+  }, []);
+  console.log(data);
+
   const handleScroll = () => {
     const nextSection = document.getElementById("discover");
 
@@ -43,19 +56,19 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[30px] md:text-5xl  font-bold tracking-wide lg:tracking-wider letter-shadow  h-2/3   lg:mt-52">
-          <motion.h1 variants={item}>Dive Into The Flavours</motion.h1>
-          <motion.h1 variants={item}>Of Our Asian Cuisine</motion.h1>
+          <motion.h1 variants={item}>{data.heroSectionFirstLine}</motion.h1>
+          <motion.h1 variants={item}>{data.heroSectionSecondLine}</motion.h1>
         </motion.div>
 
         <motion.p variants={item} className="text-primary-blue-300 letter-shadow pb-4 md:text-xl text-sm ">
-          Our menu is inspired by the traditional Asian ingredients and cooking techniques. We are committed to providing our guests with the best quality food and service.
+          {data.heroSectionDescription}
         </motion.p>
         <motion.div className="flex items-center cursor-pointer" variants={item}>
           <Link
             href="/reservation"
             type="button"
             className="bg-gradient-to-r  from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
-            BOOK A TABLE
+            {data.heroButton}
           </Link>
           <BsArrowRight className="w-14 h-10 ms-8 text-gray-700" />
         </motion.div>
@@ -63,7 +76,7 @@ const Hero = () => {
       </div>
       <div className="xl:flex-1 flex justify-end items-end md:w-4/5 w-full lg:w-[480px] xl:h-fit md:mt-60 ">
         <div className="relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-60 w-[350px]  justify-center mt-56 md:-mt-10 my-auto h-[320px] z-0 mr-10">
-          <Image src="/fish.jpeg" alt="hero" fill className="object-cover  border-slate-400/60 border-[1px] rounded-sm" />
+          <Image src={data.heroSectionImage} alt="hero" fill className="object-cover  border-slate-400/60 border-[1px] rounded-sm" />
         </div>
       </div>
     </section>
