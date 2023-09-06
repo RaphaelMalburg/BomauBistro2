@@ -13,7 +13,7 @@ const Hero = () => {
 
   useEffect(() => {
     const fetchSanity = async () => {
-      const sanityData: any = await getData();
+      const sanityData: any = (await getData()).bomauHero;
       setData(sanityData[0]);
     };
 
