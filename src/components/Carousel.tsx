@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { SplideSlide, Splide } from "@splidejs/react-splide";
 import Image from "next/image";
 import { images } from "@/utils/images";
@@ -7,8 +7,19 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import "@splidejs/react-splide/css";
 import { useState } from "react";
 import { ImageModal } from "./ImageModal";
+import { getData } from "../../sanity/sanity-utils";
 
 export default function Carousel() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const fetchSanity = async () => {
+      const sanityData: any = (await getData()).bomauGallery;
+      setData(sanityData[0]);
+    };
+
+    fetchSanity();
+  }, []);
+
   const [modalImage, setModalImage] = useState(null);
 
   const openModal = (src) => {
@@ -46,13 +57,18 @@ export default function Carousel() {
 
           lazyLoad: "nearby",
         }}>
-        {images.map((image, index) => (
-          <SplideSlide key={index} className="flex mx-auto justify-center items-center">
-            <div className="relative w-[280px] h-[300px] mx-1 shadow-xl justify-center items-center cursor-pointer" onClick={() => openModal(image.src)}>
-              <Image src={image.src} fill alt={image.alt} className="object-cover mx-auto pl-3" />
-            </div>
-          </SplideSlide>
-        ))}
+        {Object.keys(data).map((key, index) => {
+          if (key.startsWith("image")) {
+            return (
+              <SplideSlide key={index} className="flex mx-auto justify-center items-center">
+                <div className="relative w-[280px] h-[300px] mx-1 shadow-xl justify-center items-center cursor-pointer" onClick={() => openModal(data[key])}>
+                  <Image src={data[key]} fill alt={`Image ${index + 1}`} className="object-cover mx-auto pl-3" />
+                </div>
+              </SplideSlide>
+            );
+          }
+          return null;
+        })}
       </Splide>
       {modalImage && <ImageModal src={modalImage} alt="" onClose={closeModal} />}
     </div>

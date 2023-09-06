@@ -12,7 +12,6 @@ interface ParallaxProps {
 }
 const About = async () => {
   const data = (await getData()).bomauAbout[0]; // Note the [0] to access the first item in the array
-  console.log(data);
 
   return (
     <section id="about" className="max-w-[1440px] justify-center items-center mx-auto mt-[70px] md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400">

@@ -19,7 +19,6 @@ const Hero = () => {
 
     fetchSanity();
   }, []);
-  console.log(data);
 
   const handleScroll = () => {
     const nextSection = document.getElementById("discover");
