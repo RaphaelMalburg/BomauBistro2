@@ -5,8 +5,7 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import { getData } from "../../../sanity/sanity-utils";
 
 const Menu = async () => {
-  const data = (await getData()).bomauMenu[0]; // Note the [0] to access the first item in the array
-  console.log(data);
+  const data = (await getData()).bomauMenu[0];
   return (
     <main className="relative w-full h-fit bg-white ">
       {" "}

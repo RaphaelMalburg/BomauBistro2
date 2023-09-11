@@ -5,7 +5,6 @@ import { BsArrowLeftShort } from "react-icons/bs";
 const Reservation = () => {
   return (
     <div className="h-screen bg-white">
-      {" "}
       <Link href="/">
         <BsArrowLeftShort size={50} />
       </Link>

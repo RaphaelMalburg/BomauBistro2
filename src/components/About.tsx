@@ -1,17 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
 import Link from "next/link";
 import { getData } from "../../sanity/sanity-utils";
 
-interface ParallaxProps {
-  children: string;
-  baseVelocity: number;
-}
 const About = async () => {
-  const data = (await getData()).bomauAbout[0]; // Note the [0] to access the first item in the array
+  const data = (await getData()).bomauAbout[0];
 
   return (
     <section id="about" className="max-w-[1440px] justify-center items-center mx-auto mt-[70px] md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400">
@@ -26,9 +20,7 @@ const About = async () => {
             </span>
           </h2>
         </div>
-        <p className="text-primary-blue-300 md:text-xl pt-4 letter-shadow pb-4 text-sm md:col-span-2">
-          {data.aboutSectionDescription[0].children[0].text} {/* Accessing the first block of text */}
-        </p>
+        <p className="text-primary-blue-300 md:text-xl pt-4 letter-shadow pb-4 text-sm md:col-span-2">{data.aboutSectionDescription[0].children[0].text}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
@@ -39,9 +31,7 @@ const About = async () => {
           <h1 className="bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold text-[24px] md:text-4xl flex flex-col">
             {data.aboutsectionSecondTitle.firsttitle} <span className="text-[28px] md:text-5xl">{data.aboutsectionSecondTitle.secondtitle}</span>
           </h1>
-          <p className="letter-shadow pb-4 text-sm md:text-lg">
-            {data.aboutSectionSecondDescription[0].children[0].text} {/* Accessing the first block of text */}
-          </p>
+          <p className="letter-shadow pb-4 text-sm md:text-lg">{data.aboutSectionSecondDescription[0].children[0].text}</p>
           <Link
             href="/menu"
             className="bg-gradient-to-r from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-20 py-5 tracking-wider font-bold text-primary-blue-100 w-fit">

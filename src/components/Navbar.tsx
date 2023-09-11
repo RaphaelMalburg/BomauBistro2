@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { motion } from "framer-motion";
-import ButtonAtitude from "./ButtonAtitude";
+
 import { FiMenu } from "react-icons/fi";
 
 const NavBar = () => {

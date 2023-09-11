@@ -43,8 +43,8 @@ const Footer = async () => {
         </div>
         <div className="grid gap-4 bg-gradient-to-r grid-cols-1 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold md:border-r-2 border-primary-blue-300 pr-3">
           <h3 className="hidden md:block">CONTACT</h3>
-          <p className="text-base whitespace-nowrap  ">{data.footerThirdSection.contactPhone}</p>
-          <p className="text-base">{data.footerThirdSection.contactEmail}</p>
+          <p className="text-base whitespace-nowrap  ">{data.footerThirdSection.footerPhone}</p>
+          <p className="text-base">{data.footerThirdSection.footerEmail}</p>
         </div>{" "}
         <div className="grid gap-4 bg-gradient-to-r grid-cols-2 md:grid-cols-1 from-primary-blue-400 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text font-extrabold place-content-center">
           {" "}
