@@ -9,7 +9,7 @@ const Reservation = () => {
         <BsArrowLeftShort size={50} />
       </Link>
       <iframe
-        src="https://tableagent.com/iframe/bomau-bistro/"
+        src="https://reservation.carbonaraapp.com/Portugal/Lisboa/Bomau-Bistro/"
         sandbox="allow-forms allow-modals allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
         className="h-[700px] w-full"></iframe>
     </div>

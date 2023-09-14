@@ -64,7 +64,7 @@ const Hero = () => {
         </motion.p>
         <motion.div className="flex items-center cursor-pointer" variants={item}>
           <Link
-            href="/"
+            href="/reservation"
             type="button"
             className="bg-gradient-to-r  from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-8 py-5 tracking-wider font-bold text-primary-blue-100">
             {data.heroButton}
