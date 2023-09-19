@@ -10,9 +10,7 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
-.letter-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.356); /* Adjust values as needed */
-}
+
 .logo-shadow {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.922); /* Adjust values as needed */
 }

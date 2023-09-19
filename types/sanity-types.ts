@@ -13,8 +13,7 @@ export type bomauHero = {
 type bomauAbout = {
   _id: string;
   _createdAt: string;
-  AboutSectionFirstTitle: aboutsectionFirstTitle;
-  AboutSectionSecondTitle: aboutsectionSecondTitle;
+
   aboutSectionDescription: PortableTextBlock[];
   aboutSectionSecondDescription: PortableTextBlock[];
   aboutButton: string;

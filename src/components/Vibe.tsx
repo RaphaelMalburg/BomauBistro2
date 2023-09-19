@@ -15,9 +15,6 @@ const Vibe = async () => {
           </h1>
           <h2 className="flex justify-between bg-gradient-to-b from-primary-blue-300 via-primary-blue-285 to-primary-blue-400 text-transparent bg-clip-text ">
             {data.vibesectionSecondTitle.secondtitle}
-            <span className="hidden md:flex ">
-              <BsArrowRight className="w-20 h-10  text-gray-700 my-auto " />
-            </span>
           </h2>
         </div>
         <p className="text-primary-blue-300 md:text-xl my-auto pt-4 letter-shadow pb-4 md:col-span-2 ">{data.vibeSectionSecondDescription[0].children[0].text}</p>

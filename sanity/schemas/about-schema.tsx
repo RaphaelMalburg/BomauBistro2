@@ -4,30 +4,6 @@ const bomauAbout = {
   type: "document",
   fields: [
     {
-      name: "aboutsectionFirstTitle",
-      title: "About Section First Title",
-      type: "document",
-      fields: [
-        {
-          name: "firsttitle",
-          title: "First Title",
-          type: "string",
-        },
-        {
-          name: "secondtitle",
-          title: "Second Title",
-          type: "string",
-        },
-      ],
-    },
-
-    {
-      name: "aboutSectionDescription",
-      title: "About  Section Description",
-      type: "array",
-      of: [{ type: "block" }],
-    },
-    {
       name: "aboutSectionImage",
       title: "About  Section Image",
       type: "image",

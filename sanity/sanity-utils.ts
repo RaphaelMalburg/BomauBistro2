@@ -23,9 +23,6 @@ export async function getData() {
   const queryAbout = groq`*[_type == "bomauAbout"] {
       _id,
       _createdAt,
-      aboutsectionFirstTitle,
-      aboutsectionSecondTitle,
-      aboutSectionDescription,
       aboutSectionSecondDescription,
       aboutButton,
       "aboutSectionImage": aboutSectionImage.asset->url
