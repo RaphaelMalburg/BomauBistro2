@@ -46,7 +46,7 @@ const NavBar = () => {
           animate="visible"
           className={`md:items-center w-full absolute top-0 md:static ${
             menuOpen ? "block" : "hidden"
-          }  space-y-2 md:space-y-0 md:flex md:space-x-2  md:bg-transparent font-bold bg-primary-blue-200/90 text-md text-center  lg:text-lg right-0 text-primary-blue-400 md:w-auto grid lg:gap-4  gap- place-content-center tracking-wider md:h-fit h-screen col-start-3  col-span-3 z-40 letter-shadow [&_li]:bg-primary-blue-200/30 [&_li]:rounded-full [&_li]:px-2`}
+          }  space-y-2 md:space-y-0 md:flex md:space-x-2  md:bg-transparent font-bold bg-primary-blue-200/90 text-lg text-center  lg:text-lg right-0 text-primary-blue-400 md:w-auto grid lg:gap-4  gap-14 place-content-center tracking-wider md:h-fit h-screen col-start-3  col-span-3 z-40 letter-shadow [&_li]:bg-primary-blue-200/30 [&_li]:rounded-full [&_li]:px-2`}
           onClick={toggleMenu}>
           {/* Navigation items */}
           <motion.li variants={item}>
