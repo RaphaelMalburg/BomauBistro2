@@ -54,12 +54,14 @@ const Hero = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[30px] md:text-5xl  font-bold tracking-wide lg:tracking-wider letter-shadow  h-2/3   lg:mt-52">
-          <motion.h1 variants={item}>{data.heroSectionFirstLine}</motion.h1>
+          className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[30px] md:text-5xl  font-bold tracking-wide lg:tracking-wider  h-2/3   lg:mt-52">
+          <motion.h1 variants={item} className="-mb-30 md:mb-0">
+            {data.heroSectionFirstLine}
+          </motion.h1>
           <motion.h1 variants={item}>{data.heroSectionSecondLine}</motion.h1>
         </motion.div>
 
-        <motion.p variants={item} className="text-primary-blue-300 letter-shadow pb-4 md:text-xl text-sm ">
+        <motion.p variants={item} className="text-primary-blue-300 pb-4 md:text-xl text-sm ">
           {data.heroSectionDescription}
         </motion.p>
         <motion.div className="flex items-center cursor-pointer" variants={item}>
