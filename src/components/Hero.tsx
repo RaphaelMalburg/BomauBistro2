@@ -48,19 +48,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-300 h-fit ">
+    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-300 h-fit mb-10">
       <div className="flex-[1.5] padding-x grid gap-4">
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
           className="flex flex-grow  flex-col xl:text-6xl mt:48 text-[30px] md:text-5xl  font-bold tracking-wide lg:tracking-wider  h-2/3   lg:mt-52">
-          <motion.h1 variants={item} className="-pb-30 md:pb-0">
-            {data.heroSectionFirstLine}
-          </motion.h1>
-          <motion.h1 variants={item} className="-pt-30 md:pt-0">
-            {data.heroSectionSecondLine}
-          </motion.h1>
+          <motion.h1 variants={item}>{data.heroSectionFirstLine}</motion.h1>
+          <motion.h1 variants={item}>{data.heroSectionSecondLine}</motion.h1>
         </motion.div>
 
         <motion.p variants={item} className="text-primary-blue-300 pb-4 md:text-xl text-sm ">
