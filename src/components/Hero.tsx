@@ -49,6 +49,14 @@ const Hero = () => {
 
   return (
     <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-300 h-fit ">
+      <motion.div className="md:hidden items-center cursor-pointer absolute top-52 right-10" variants={item}>
+        <Link
+          href="/reservation"
+          type="button"
+          className="bg-gradient-to-r  from-primary-blue-285 via-primary-blue-300 to-primary-blue-400 rounded-full px-6 py-4 tracking-wider font-bold text-primary-blue-100">
+          {data.heroButton}
+        </Link>
+      </motion.div>
       <div className="flex-[1.5] padding-x grid gap-4">
         <motion.div
           variants={container}
@@ -62,7 +70,7 @@ const Hero = () => {
         <motion.p variants={item} className="text-primary-blue-300 pb-4 md:text-xl text-sm ">
           {data.heroSectionDescription}
         </motion.p>
-        <motion.div className="flex items-center cursor-pointer" variants={item}>
+        <motion.div className="md:flex items-center cursor-pointer hidden" variants={item}>
           <Link
             href="/reservation"
             type="button"
@@ -72,7 +80,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="xl:flex-1 flex justify-end items-end md:w-4/5 w-full lg:w-[480px] xl:h-fit md:mt-60 ">
-        <div className="relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-60 w-[350px]  justify-center mt-56 md:-mt-10 my-auto h-[320px] z-0 mr-10">
+        <div className="relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-72 w-[350px]  justify-center mt-72 md:-mt-10 my-auto h-[320px] z-0 mr-10">
           <Image src={data.heroSectionImage} alt="hero" fill className="object-cover  border-slate-400/60 border-[1px] rounded-sm" />
         </div>
       </div>
