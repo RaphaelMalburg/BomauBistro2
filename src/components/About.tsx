@@ -8,7 +8,7 @@ const About = async () => {
   const data = (await getData()).bomauAbout[0];
 
   return (
-    <section id="about" className="max-w-[1440px] justify-center items-center mx-auto  md:pt-4 padding-x flex flex-col relative gap-4 text-primary-blue-400">
+    <section id="about" className="max-w-[1440px] justify-center items-center mx-auto  md:pt-14 padding-x flex flex-col relative gap-4 text-primary-blue-400">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div className="relative xl:w-[570px] mx-2 xs1:w-full xl:h-[450px] w-[320px] -ms-2 justify-center my-auto h-[320px] z-0">
           <Image src={data.aboutSectionImage} fill alt="fish photo" className="object-cover border-slate-400/60 border-[1px] rounded-sm" />
