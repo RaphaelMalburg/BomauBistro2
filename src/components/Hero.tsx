@@ -48,7 +48,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-300 h-fit mb-10">
+    <section className="flex lg:flex-row flex-col-reverse gap-5 relative z-0 max-w-[1440px] justify-center items-center mx-auto   text-primary-blue-300 h-fit ">
       <div className="flex-[1.5] padding-x grid gap-4">
         <motion.div
           variants={container}
@@ -75,7 +75,6 @@ const Hero = () => {
         <div className="relative xl:w-[570px] mx-2 xs1:w-full  xl:h-[450px] xs1:mt-60 w-[350px]  justify-center mt-56 md:-mt-10 my-auto h-[320px] z-0 mr-10">
           <Image src={data.heroSectionImage} alt="hero" fill className="object-cover  border-slate-400/60 border-[1px] rounded-sm" />
         </div>
-        <div className="h-10 w-full" />
       </div>
     </section>
   );
